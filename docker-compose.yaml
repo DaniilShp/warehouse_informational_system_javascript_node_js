@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: daniil
+      POSTGRES_PASSWORD: 0909
+      POSTGRES_DB: warehouse_db
+    network_mode: "host"
+  app:
+    restart: unless-stopped
+    depends_on:
+      - db
+    env_file: .env
+    build:
+      context: .
+    ports:
+      - "8081:8081"
+    network_mode: "host"

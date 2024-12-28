@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f1f177;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(247, 244, 244, 0.1);
+}
+
+h1, h3 {
+    color: #333;
+}
+
+#orderContainer {
+    margin: 20px 0;
+}
+
+.order {
+    padding: 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.product-list {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+#deleteOrder {
+    background-color: red; /* Устанавливаем красный фон */
+    border: none; /* Убираем границу */
+    padding: 10px 20px; /* Добавляем отступы для удобства */
+    cursor: pointer; /* Изменяем курсор на указатель при наведении */
+    font-size: 12px; /* Устанавливаем размер шрифта */
+    border-radius: 5px; /* Добавляем скругление углов */
+}
+
+#deleteOrder:hover {
+    background-color: darkred; /* Темно-красный фон при наведении */
+}
+
+#addOrder:hover {
+    background-color: #28a745; /* Темно-красный фон при наведении */
+}
+
+button, input, select {
+    width: 150px; /* Фиксированная ширина */
+    height: 30px; /* Фиксированная высота */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Скругление углов */
+    cursor: pointer; /* Изменяем курсор на указатель при наведении */
+    font-size: 12px; /* Устанавливаем размер шрифта */
+    background-color: #ffffff;
+}
+
+.container {
+    margin-bottom: 10px; /* Отступ между контейнерами */
+}
+
+.container{
+    background-color: #f0f8ff; 
+    border: 2px solid #007bff; /* Синяя рамка */
+    border-radius: 8px; /* Скругление углов */
+    padding: 5px 15px 5px 15px; /* Внутренние отступы */
+}
+
+#orderList {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    height: 290px; /* Задаем фиксированную высоту */
+    overflow-y: auto; /* Добавляем прокрутку по вертикали, если содержимое превышает высоту */
+    border: 1px solid #ccc; /* Добавляем границу для визуального оформления */
+    border-radius: 5px; /* Скругление углов */
+}
+
+#orderList li {
+    padding: 10px; /* Внутренние отступы для элементов списка */
+    background-color: #e9ecef; /* Светло-серый фон для элементов списка */
+    margin-bottom: 5px; /* Отступ между элементами списка */
+    border-radius: 5px; /* Скругление углов элементов списка */
+    transition: background-color 0.3s, border-color 0.3s; /* Плавный переход цвета фона и границы */
+    border: 2px solid transparent; /* Начальная граница */
+    margin: 5px 10px 5px 10px; /* Отступы: сверху, справа, снизу, слева */
+}
+
+
+/* Стили для выбранного элемента списка */
+#orderList li.selected {
+    border: 4px solid #28a745; /* Цвет границы для выбранного элемента */
+}
+
+.header {
+    display: flex; /* Используем flexbox для выравнивания элементов */
+    align-items: center; /* Центрируем элементы по вертикали */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    background-color: #007bff; /* Цвет фона заголовка */
+    padding: 10px; /* Отступы вокруг заголовка */
+    color: white; /* Цвет текста */
+}
+
+.header-icon {
+    width: 120px; /* Ширина иконки */
+    height: 70px; /* Высота иконки */
+    margin-right: 10px; /* Отступ справа от иконки */
+}
+
+.header-title {
+    margin: 0; /* Убираем отступы у заголовка */
+    font-size: 24px; /* Размер шрифта заголовка */
+}
+
+h1, h2 {
+    margin: 10px; /* Убираем отступы сверху и снизу */
+    padding: 10px; /* Убираем внутренние отступы */
+}
+
+h4, h5 {
+    margin: 5px; /* Убираем отступы сверху и снизу */
+    padding: 5px; /* Убираем внутренние отступы */
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
