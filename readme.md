@@ -1,5 +1,5 @@
-# Для запуска в контейнере
-# запустится контейнер с базой данных postgres (c записанными в docker-compose.yaml настройками, соответствующими .env.example) и контейнер с сервером
+# п■п╩я▐ п╥п╟п©я┐я│п╨п╟ п╡ п╨п╬п╫я┌п╣п╧п╫п╣я─п╣
+# п╥п╟п©я┐я│я┌п╦я┌я│я▐ п╨п╬п╫я┌п╣п╧п╫п╣я─ я│ п╠п╟п╥п╬п╧ п╢п╟п╫п╫я▀я┘ postgres (c п╥п╟п©п╦я│п╟п╫п╫я▀п╪п╦ п╡ docker-compose.yaml п╫п╟я│я┌я─п╬п╧п╨п╟п╪п╦, я│п╬п╬я┌п╡п╣я┌я│я┌п╡я┐я▌я┴п╦п╪п╦ .env.example) п╦ п╨п╬п╫я┌п╣п╧п╫п╣я─ я│ я│п╣я─п╡п╣я─п╬п╪
 
 git clone https://github.com/DaniilShp/warehouse_informational_system_javascript_node_js.git
 cd warehouse_informational_system_javascript_node_js
